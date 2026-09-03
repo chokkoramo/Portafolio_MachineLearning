@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
-file_image = "knn.png"
+file_image = "images/knn.png"
+kmeans_image = "images/kmeans.png"
 
 st.title("Aplicaciones de Machine Learning.")
 
@@ -29,12 +30,10 @@ with col1:
     url = ""
     st.write(f"KNN: [Enlace]({url})")
 
-    
-
 with col2:
     st.subheader("Agrupamiento con K-Means")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open(file_image)
+    image = Image.open(kmeans_image)
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo agrupar datos usando K-Means.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
@@ -48,5 +47,5 @@ with col3:
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo funciona un árbol de decisión.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
-    url = "REEMPLAZA_url_arbol.streamlit.app/"
+    url = "https://kmeans-logisticregression-svc.streamlit.app/"
     st.write(f"Árbol de Decisión: [Enlace]({url})")
