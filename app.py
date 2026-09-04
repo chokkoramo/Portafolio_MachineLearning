@@ -39,7 +39,7 @@ with col1:
     # 👇 REEMPLAZA el nombre del archivo de imagen
     image = Image.open(predictor_image)
     st.image(image, width=190)
-    st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
+    st.write("En el siguiente enlace veremos cómo predecir datos con regresion lineal")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
     url = predictor_url
     st.write(f"Predictor: [Enlace]({url})")
