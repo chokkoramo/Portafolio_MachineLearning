@@ -42,7 +42,7 @@ with col1:
     st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
     url = predictor_url
-    st.write(f"KNN: [Enlace]({url})")
+    st.write(f"Predictor: [Enlace]({url})")
 
 with col2:
     st.subheader("Agrupamiento con K-Means")
