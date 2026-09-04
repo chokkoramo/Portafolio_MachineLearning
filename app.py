@@ -5,8 +5,8 @@ default_image = "images/knn.png"
 desiciontree_url = "https://decisiontreejuank.streamlit.app/"
 desiciontree_image = "images/desiciontree.jpeg"
 
-knn_url = "https://knn-logisticregression-svc.streamlit.app/"
-knn_image = "images/knn.jpeg"
+predictor_url = "https://app-preview-jesduhbggg3wn7jdror8pb.streamlit.app/"
+predictor_image = "images/knn.jpeg"
 
 logistic_url = "https://logisticregressionjuank.streamlit.app/"
 logistic_image = "images/logistic_image.jpeg"
@@ -35,13 +35,13 @@ st.write(f"Enlace para páginas y ejercicios: [Enlace]({url_ml})")
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.subheader("Clasificación con KNN")
+    st.subheader("Predisctor en vivo")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open(knn_image)
+    image = Image.open(predictor_image)
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
-    url = knn_url
+    url = predictor_url
     st.write(f"KNN: [Enlace]({url})")
 
 with col2:
