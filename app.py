@@ -1,9 +1,6 @@
 import streamlit as st
 from PIL import Image
-file_image = "images/knn.png"
-
-kmeans_image = "images/kmeans.png"
-kmeans_url = "https://kmeans-logisticregression-svc.streamlit.app/"
+default_image = "images/knn.png"
 
 desiciontree_url = "https://decisiontreejuank.streamlit.app/"
 desiciontree_image = "images/desiciontree.jpeg"
@@ -17,7 +14,7 @@ logistic_image = "images/logistic_image.jpeg"
 desiciontree_image = "images/desiciontree.jpeg"
 desiciontree_url = "https://decisiontreejuank.streamlit.app/"
 
-kmeans_image = "images/kmeans.png"
+kmeans_image = "images/kmeans.jpeg"
 kmeans_url = "https://kmeans-logisticregression-svc.streamlit.app/"
 
 st.title("Aplicaciones de Machine Learning.")
