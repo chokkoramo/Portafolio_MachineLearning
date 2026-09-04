@@ -5,6 +5,21 @@ file_image = "images/knn.png"
 kmeans_image = "images/kmeans.png"
 kmeans_url = "https://kmeans-logisticregression-svc.streamlit.app/"
 
+desiciontree_url = "https://decisiontreejuank.streamlit.app/"
+desiciontree_image = "images/desiciontree.jpeg"
+
+knn_url = "https://knn-logisticregression-svc.streamlit.app/"
+knn_image = "images/knn.jpeg"
+
+logistic_url = "https://logisticregressionjuank.streamlit.app/"
+logistic_image = "images/logistic_image.jpeg"
+
+desiciontree_image = "images/desiciontree.jpeg"
+desiciontree_url = "https://decisiontreejuank.streamlit.app/"
+
+kmeans_image = "images/kmeans.png"
+kmeans_url = "https://kmeans-logisticregression-svc.streamlit.app/"
+
 st.title("Aplicaciones de Machine Learning.")
 
 with st.sidebar:
@@ -20,16 +35,16 @@ url_ml = "https://sites.google.com/view/aplicacionesdeia/inicio"
 st.subheader("En el siguiente enlace puedes encontrar páginas y ejercicios prácticos")
 st.write(f"Enlace para páginas y ejercicios: [Enlace]({url_ml})")
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.subheader("Clasificación con KNN")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open(file_image)
+    image = Image.open(knn_image)
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
-    url = ""
+    url = knn_url
     st.write(f"KNN: [Enlace]({url})")
 
 with col2:
@@ -45,9 +60,19 @@ with col2:
 with col3:
     st.subheader("Árboles de Decisión")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open(file_image)
+    image = Image.open(desiciontree_image)
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo funciona un árbol de decisión.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
-    url = "REEMPLAZA_url_arbol.streamlit.app/"
+    url = desiciontree_url
     st.write(f"Árbol de Decisión: [Enlace]({url})")
+
+with col4:
+    st.subheader("Regresión Logística")
+    # 👇 REEMPLAZA el nombre del archivo de imagen
+    image = Image.open(logistic_image)
+    st.image(image, width=190)
+    st.write("En el siguiente enlace veremos cómo funciona la regresión logística.")
+    # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
+    url = logistic_url
+    st.write(f"Regresión Logística: [Enlace]({url})")
