@@ -40,7 +40,7 @@ models_data = [
     {"title": "Agrupamiento con K-Means", "image_path": kmeans_image, "desc": "En el siguiente enlace veremos cómo agrupar datos usando K-Means.", "url": kmeans_url, "link_text": "K-Means"},
     {"title": "Árboles de Decisión", "image_path": desiciontree_image, "desc": "En el siguiente enlace veremos cómo funciona un árbol de decisión.", "url": desiciontree_url, "link_text": "Árbol de Decisión"},
     {"title": "Regresión Logística", "image_path": logistic_image, "desc": "En el siguiente enlace veremos cómo funciona la regresión logística.", "url": logistic_url, "link_text": "Regresión Logística"},
-    {"title": "Consumo Energetico", "image_path": consumo_energetico_image, "desc": "En el siguiente enlace veremos cómo predecir el consumo energético.", "url": consumo_energetico_url, "link_text": "Consumo Energético"},
+    {"title": "Consumo Energetico", "image_path": consumo_energetico_image, "desc": "En el siguiente enlace veremos cómo predecir el consumo energético.", "url": consumo_energetico_url, "link_text": "Consumo Energético"}
 ]
 
 # Helper function to render a single model card
