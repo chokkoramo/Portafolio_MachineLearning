@@ -69,4 +69,3 @@ st.write("---")
 
 row3_col1, row3_col2 = st.columns(2, gap="large")
 render_card(row3_col1, models_data[4])
-render_card(row3_col2, models_data[5])
