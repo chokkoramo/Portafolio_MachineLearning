@@ -17,7 +17,7 @@ desiciontree_url = "https://decisiontreejuank.streamlit.app/"
 kmeans_image = "images/kmeans.jpeg"
 kmeans_url = "https://kmeans-logisticregression-svc.streamlit.app/"
 
-consumo_energetico_image = "images/consumo_energetico.jpeg"
+consumo_energetico_image = "images/consumo_energetico.jpg"
 consumo_energetico_url = "https://consumo-energetico-juank.streamlit.app/"
 
 st.title("Aplicaciones de Machine Learning.")
@@ -48,7 +48,7 @@ def render_card(col, model):
     with col:
         st.subheader(model["title"])
         img = Image.open(model["image_path"])
-        st.image(img, use_container_width=True)  # Fills the column nicely
+        st.image(img, width=True)  # Fills the column nicely
         st.write(model["desc"])
         st.write(f"{model['link_text']}: [Enlace]({model['url']})")
 
