@@ -67,5 +67,5 @@ render_card(row2_col2, models_data[3])
 
 st.write("---")  
 
-row3_col1, row3_col2 = st.columns(2, gap="large")
+row3_col1 = st.columns(1, gap="large")
 render_card(row3_col1, models_data[4])
