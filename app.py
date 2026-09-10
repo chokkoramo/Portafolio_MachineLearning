@@ -48,7 +48,7 @@ def render_card(col, model):
     with col:
         st.subheader(model["title"])
         img = Image.open(model["image_path"])
-        st.image(img, width=True)  # Fills the column nicely
+        st.image(img, use_container_width=True)  # Fills the column nicely
         st.write(model["desc"])
         st.write(f"{model['link_text']}: [Enlace]({model['url']})")
 
