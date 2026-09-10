@@ -17,6 +17,9 @@ desiciontree_url = "https://decisiontreejuank.streamlit.app/"
 kmeans_image = "images/kmeans.jpeg"
 kmeans_url = "https://kmeans-logisticregression-svc.streamlit.app/"
 
+consumo_energetico_image = "images/consumo_energetico.jpeg"
+consumo_energetico_url = "https://consumo-energetico-juank.streamlit.app/"
+
 st.title("Aplicaciones de Machine Learning.")
 
 with st.sidebar:
@@ -36,7 +39,8 @@ models_data = [
     {"title": "Predictor en vivo", "image_path": predictor_image, "desc": "En el siguiente enlace veremos cómo predecir datos con regresión lineal.", "url": predictor_url, "link_text": "Predictor"},
     {"title": "Agrupamiento con K-Means", "image_path": kmeans_image, "desc": "En el siguiente enlace veremos cómo agrupar datos usando K-Means.", "url": kmeans_url, "link_text": "K-Means"},
     {"title": "Árboles de Decisión", "image_path": desiciontree_image, "desc": "En el siguiente enlace veremos cómo funciona un árbol de decisión.", "url": desiciontree_url, "link_text": "Árbol de Decisión"},
-    {"title": "Regresión Logística", "image_path": logistic_image, "desc": "En el siguiente enlace veremos cómo funciona la regresión logística.", "url": logistic_url, "link_text": "Regresión Logística"}
+    {"title": "Regresión Logística", "image_path": logistic_image, "desc": "En el siguiente enlace veremos cómo funciona la regresión logística.", "url": logistic_url, "link_text": "Regresión Logística"},
+    {"title": "Consumo Energetico", "image_path": consumo_energetico_image, "desc": "En el siguiente enlace veremos cómo predecir el consumo energético.", "url": consumo_energetico_url, "link_text": "Consumo Energético"},
 ]
 
 # Helper function to render a single model card
@@ -60,3 +64,9 @@ st.write("---")
 row2_col1, row2_col2 = st.columns(2, gap="large")
 render_card(row2_col1, models_data[2])
 render_card(row2_col2, models_data[3])
+
+st.write("---")  
+
+row3_col1, row3_col2 = st.columns(2, gap="large")
+render_card(row3_col1, models_data[4])
+render_card(row3_col2, models_data[5])
