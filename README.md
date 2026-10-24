@@ -18,6 +18,16 @@ Este repositorio contiene una aplicación principal en Streamlit que centraliza 
   - Ejemplo de clasificación con regresión logística.
 - **Consumo Energético**: `https://consumo-energetico-juank.streamlit.app/`
   - Predicción de consumo energético.
+- **Texto a Audio**: `https://texttoaudiojuank.streamlit.app/`
+  - Conversión interactiva de texto a audio mediante síntesis de voz.
+- **Audio a Texto**: `https://translateaudio2text.streamlit.app/`
+  - Transcripción y traducción de audio a texto utilizando reconocimiento del habla.
+- **Redes Neuronales Recurrentes (RNN)**: `https://rnn-energycons.streamlit.app/`
+  - Predicción de series temporales de consumo energético mediante redes neuronales recurrentes.
+- **Redes LSTM**: `https://lstmjuank.streamlit.app/`
+  - Modelado y predicción secuencial con redes Long Short-Term Memory.
+- **Visión Artificial**: `https://computervision-juank.streamlit.app/`
+  - Aplicaciones interactivas de procesamiento de imágenes y visión por computadora.
 
 ### Recurso adicional
 - **Sitio de páginas y ejercicios prácticos**: `https://sites.google.com/view/aplicacionesdeia/inicio`
